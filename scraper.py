@@ -15,5 +15,7 @@ opinion_id = opinion["data-entry-id"]
 author = opinion.select_one("span.user-post__author-name").get_text().strip()
 recommendation = opinion.select_one("span.user-post__author-recomendation > em").get_text().strip()
 stars = opinion.select_one("span.user-post__score-count").get_text().strip()
+content = opinion.select_one("div.user-post__text").get_text().strip()
+
 
 print(author)

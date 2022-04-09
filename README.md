@@ -4,7 +4,7 @@
 
     | Składowa opinii | Selektor | Nazwa zmiennej | Typ danych |
     |-----------------|----------|----------------|------------|
-    |opinia|div.js_product-review|opinion|bs4.element.Tag||
+    |opinia|div.js_product-review|opinion|||
     |indentyfikator opinii|div.js_product-review\["data-entry-id"\]|opinion_id|||
     |autor opinii|span.user-post__author-name|author||
     |rekomendacja autora|span.user-post__author-recomendation > em|recommendation||
