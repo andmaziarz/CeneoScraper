@@ -1,10 +1,8 @@
-from urllib import response
-import requests
 from turtle import st
+import requests
 from bs4 import BeautifulSoup
 
-
-url ="https://www.ceneo.pl/101052360#tab=reviews"
+url = "https://www.ceneo.pl/101052360#tab=reviews"
 response = requests.get(url)
 
 page = BeautifulSoup(response.text, "html.parser")
@@ -21,5 +19,3 @@ useless = opinion.select_one("button.vote-no > span").get_text().strip()
 published = opinion.select_one("span.user-post__published > time:nth-child(1)")["datetime"]
 purchased = opinion.select_one("span.user-post__published > time:nth-child(2)")["datetime"]
 print(author, recommendation, stars, content, useful, useless, published, purchased, sep="\n")
-
-print(author)
