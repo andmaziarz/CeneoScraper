@@ -6,8 +6,8 @@ import json
 from turtle import st
 from bs4 import BeautifulSoup
 
-
-url ="https://www.ceneo.pl/113706425#tab=reviews"
+input_id = input("Opinion id: ")
+url ="https://www.ceneo.pl/"+input_id+"#tab=reviews"
 all_opinions = []
 while (url):
     response = requests.get(url)
@@ -55,5 +55,5 @@ while (url):
     except TypeError:
         url = None
 
-with open("opinons/113706425.json", "w", encoding="utf-8") as jf:
+with open("opinons/"+input_id+".json", "w", encoding="utf-8") as jf:
     json.dump(all_opinions, jf, indent = 4, ensure_ascii=False)
