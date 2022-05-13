@@ -55,5 +55,5 @@ while (url):
     except TypeError:
         url = None
 
-with open("opinons/"+input_id+".json", "w", encoding="utf-8") as jf:
+with open("opinions/"+input_id+".json", "w", encoding="utf-8") as jf:
     json.dump(all_opinions, jf, indent = 4, ensure_ascii=False)
