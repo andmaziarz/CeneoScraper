@@ -31,6 +31,7 @@ stars = opinions["stars"].value_counts().sort_index().reindex(list(np.arange(0,5
 stars.plot.bar(
     color = "#fbec5d"
 )
+
 plt.title("Oceny produktów")
 plt.xlabel("Liczba gwiazdek")
 plt.ylabel("Liczba opinii")
