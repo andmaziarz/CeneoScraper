@@ -27,3 +27,4 @@
     a. utworzenie funkcji do pobierania składowych strony HTML
     b. utworzenie słownika opisującego strukturę opinii wraz z selektorami poszczególnych elementów
     c. zamiana instrukcji pobierających składowe opinii do pojedynczych zmiennych i tworzących z nich słownik na wyrażenie słownikowe \(dictionary comprehension\) tworzące słownik reprezentujący pojedynczą opinię na podstawie słownika selektorów
+    
